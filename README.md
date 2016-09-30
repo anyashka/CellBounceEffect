@@ -9,3 +9,5 @@ So, a great solution is to create custom delete view that is identical to the sy
 This small project is just perfect if you are searching for an inspiration how to implement such a hint in your application. You can show it once after user adds first cell to the table view. Let the user know that he can swipe to delete!
 
 Check how this interesting piece of code works! :) 
+
+![DEMO] (https://cloud.githubusercontent.com/assets/18245585/18987629/c2e753cc-8702-11e6-9200-0dc1fcb3200d.gif)
