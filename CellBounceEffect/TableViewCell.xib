@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="52" id="44I-ng-JGf" customClass="TableViewCell" customModule="CellBounceEffect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="44I-ng-JGf" id="FRJ-9M-ldU">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6lz-u3-RMp" userLabel="Delete View">
+                        <rect key="frame" x="236" y="0.0" width="84" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDb-33-XoH">
+                                <rect key="frame" x="16" y="15" width="53" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="5qs-Hg-pKz"/>
+                            <constraint firstItem="dDb-33-XoH" firstAttribute="centerY" secondItem="6lz-u3-RMp" secondAttribute="centerY" id="ECY-yt-jfj"/>
+                            <constraint firstItem="dDb-33-XoH" firstAttribute="centerX" secondItem="6lz-u3-RMp" secondAttribute="centerX" id="ZZw-4g-WIC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmo-C4-3mt" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click on me to see there is delete view! :)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHn-dY-zI0">
+                                <rect key="frame" x="12" y="15" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OHn-dY-zI0" firstAttribute="leading" secondItem="xmo-C4-3mt" secondAttribute="leading" constant="12" id="GCr-Zq-7pv"/>
+                            <constraint firstItem="OHn-dY-zI0" firstAttribute="centerY" secondItem="xmo-C4-3mt" secondAttribute="centerY" id="gcd-W7-STt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xmo-C4-3mt" firstAttribute="leading" secondItem="FRJ-9M-ldU" secondAttribute="leading" id="0IF-BM-hO1"/>
+                    <constraint firstAttribute="bottom" secondItem="6lz-u3-RMp" secondAttribute="bottom" id="14m-RD-Kh6"/>
+                    <constraint firstAttribute="trailing" secondItem="6lz-u3-RMp" secondAttribute="trailing" id="J91-MN-5r5"/>
+                    <constraint firstItem="xmo-C4-3mt" firstAttribute="leading" secondItem="FRJ-9M-ldU" secondAttribute="leadingMargin" id="Jxu-sv-S4p"/>
+                    <constraint firstAttribute="bottom" secondItem="xmo-C4-3mt" secondAttribute="bottom" id="cPH-16-x5T"/>
+                    <constraint firstAttribute="trailing" secondItem="xmo-C4-3mt" secondAttribute="trailing" id="mjW-xa-1wn"/>
+                    <constraint firstItem="xmo-C4-3mt" firstAttribute="top" secondItem="FRJ-9M-ldU" secondAttribute="top" id="rUH-nA-gQV"/>
+                    <constraint firstItem="6lz-u3-RMp" firstAttribute="top" secondItem="FRJ-9M-ldU" secondAttribute="top" id="tZ9-5W-L5N"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Jxu-sv-S4p"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="xmo-C4-3mt" id="K72-WX-qR6"/>
+                <outlet property="deleteView" destination="6lz-u3-RMp" id="xW4-xG-ez8"/>
+            </connections>
+            <point key="canvasLocation" x="404" y="248"/>
+        </tableViewCell>
+    </objects>
+</document>
