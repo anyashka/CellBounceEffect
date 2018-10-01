@@ -10,4 +10,4 @@ This small project is just perfect if you are searching for an inspiration how t
 
 Check how this interesting piece of code works! :) 
 
-![DEMO] (https://cloud.githubusercontent.com/assets/18245585/18987629/c2e753cc-8702-11e6-9200-0dc1fcb3200d.gif)
+![](https://cloud.githubusercontent.com/assets/18245585/18987629/c2e753cc-8702-11e6-9200-0dc1fcb3200d.gif)
